@@ -5,7 +5,7 @@
 ### Passando os argumentos
 Para o script funcionar, será necessário que o usuário passe dois argumentos separados por espaço: 
 1. Diretório de origem (que será copiado)
-2. Diretório de destino (se o subdiretório final não existir, o script cria automáticamente)
+2. Diretório de destino (se o subdiretório final não existir, o script cria automáticamente)<br>
 Exemplo: ./backup.sh ~/diretorio-origem ~/diretorio-backup
 
 
