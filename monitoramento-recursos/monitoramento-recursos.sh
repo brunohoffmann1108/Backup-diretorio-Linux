@@ -3,9 +3,6 @@
 #Data atual.
 dataAtual=$(date +"%d-%m-%Y_%H:%M:%S")
 
-#Arquivo LOG.
-LOG=~/recursos/"$dataAtual".log
-
 #Uso de CPU em porcentagem.
 usoCPU=$(top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4}')
 
@@ -18,9 +15,9 @@ usoMemoria=$(free -m | awk 'NR==2{printf "%.2f\n", $3*100/$2}')
 #Uso de disco em porcentagem.
 usoDisco=$(df -h | awk '$NF=="/"{print $5}')
 
-printf "MONITORAMENTO DE RECURSOS %s\n" "$dataAtual" >> "$LOG"
-printf "Uso de CPU: %s\n" "$usoCPU%" >> "$LOG"
-printf "5 Processos mais pesados:\n%s\n" "$processos" >> "$LOG"
-printf "Memória RAM em uso: %s%%\n" "$usoMemoria" >> "$LOG"
-printf "Uso de disco: %s\n" "$usoDisco" >> "$LOG"
+printf "MONITORAMENTO DE RECURSOS %s\n" "$dataAtual"
+printf "Uso de CPU: %s\n" "$usoCPU%"
+printf "5 Processos mais pesados:\n%s\n" "$processos"
+printf "Memória RAM em uso: %s%%\n" "$usoMemoria"
+printf "Uso de disco: %s\n" "$usoDisco"
 
