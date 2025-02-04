@@ -1,10 +1,9 @@
 # Renomeação de arquivos em massa (mt massa) usando BASH
-**Descrição:** Dois scripts na pasta na verdade. Um é apenas pra facilitar a vida de alguém que tiver interesse (pq diabos vc ta interessado nisso mds?) 
-de testar as renomeações, e o outro para renomear os arquivos em si. Senta que lá vem história.
+**Descrição:** Dois scripts na pasta na verdade. Um é apenas pra facilitar a vida de alguém que tiver interesse de testar as renomeações, e o outro para renomear os arquivos em si. Senta que lá vem história.
 
 ## Como utilizar
 ### Criação automática de arquivos
-Bem simples. No diretório em que o usuário está, passe os 2 argumentos: número de arquivos criados e nome base. O resultado será, no diretório alvo, a quantidade de arquivos nomeados com o nome base seguidos do número, de zero ao tanto de arquivos que tu quis criar. Tu q manda chef. Tem uma mensagenzinha de feedback também (ela tem corzinha). Exemplo: `./criacao-arquivos.sh 10 arquivo` cria 10 arquivos no formato arquivo1, arquivo2...
+Bem simples. No diretório em que o usuário está, passe os 2 argumentos: número de arquivos criados e nome base. O resultado será, no diretório alvo, a quantidade de arquivos nomeados com o nome base seguidos do número, de zero ao tanto de arquivos que tu quis criar. Tem uma mensagenzinha de feedback também (ela tem corzinha). Exemplo: `./criacao-arquivos.sh 10 arquivo` cria 10 arquivos no formato arquivo1, arquivo2...
 
 ### Renomeação de arquivos
 Depois de criar automáticamente os arquivos com os nomes mais obcenos possíveis, está na hora de renomeá-los. Ela também acontece no diretório em que o usuário se encontra. O script te avisará  ao rodar o código (com corzinha vermelha), e se não houverem arquivos no diretório, ele encerra e retorna um aviso (avisando). No menu, escolha sua opção, escolha o parâmetro da opção, e dale um `ls` pra ver a mágica acontecida.
